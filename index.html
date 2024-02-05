@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="saurabh.css">
+</head>
+
+<body class="flex">
+    <div class="main-container flex">
+        <div class="title">
+            <h1>Rock-Paper-Scissors</h1>
+        </div>
+        <div class="hand-box flex">
+            <div class="comp-hand hand" id="compHand"><img src="comp-fist.png" alt="" class="moving-hand"></div>
+            <div class="user-hand hand" id="userHand"><img src="user-fist.png" alt="" class="moving-hand"></div>
+            <div class="symbol">
+                <button class="icon" type="button" onclick="userInput(1)">&#x270A;</button>
+                <button class="icon" type="button" onclick="userInput(2)">&#9995; </button>
+                <button class="icon" type="button" onclick="userInput(3)">&#9996;</button>
+            </div>
+        </div>
+        <div id="result"></div>
+        <div id="reset"></div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

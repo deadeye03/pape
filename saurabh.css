@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@keyframes shakeHand {
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    font-family: Acme, Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(247, 243, 243);
+    
+  }
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+   
+    flex-direction: column;
+    gap: 20px;
+}
+.hand-box{
+    gap: 50px;
+   
+}
+.hand img{
+    height: 120px;
+}
+.moving-hand{
+    height: 100px !important;
+    animation: shakeHand 1s infinite alternate-reverse linear;
+}
+
+.symbol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.icon{
+    font-size: 35px;
+}
